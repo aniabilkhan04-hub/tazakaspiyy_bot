@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <!-- Градиент бирюзовый как в логотипе колледжа -->
+    <linearGradient id="collegeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00BCD4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0097A7;stop-opacity:1" />
+    </linearGradient>
+    <!-- Градиент зелёный для экологии -->
+    <linearGradient id="ecoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4CAF50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2E7D32;stop-opacity:1" />
+    </linearGradient>
+    <!-- Тень -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="5" stdDeviation="4" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Фон круг -->
+  <circle cx="250" cy="250" r="230" fill="white" stroke="url(#collegeGrad)" stroke-width="8" filter="url(#shadow)"/>
+
+  <!-- Стрелка/волна в стиле логотипа колледжа (бирюзовая) -->
+  <path d="M 120 320 L 220 180 L 320 280 L 380 220" 
+        fill="none" stroke="url(#collegeGrad)" stroke-width="35" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Лист/капля (экология) -->
+  <path d="M 250 120 Q 320 200 250 280 Q 180 200 250 120 Z" 
+        fill="url(#ecoGrad)" opacity="0.9"/>
+
+  <!-- Внутренний лист -->
+  <path d="M 250 150 Q 290 200 250 250 Q 210 200 250 150 Z" 
+        fill="white" opacity="0.3"/>
+
+  <!-- Круг внизу как в логотипе колледжа -->
+  <circle cx="250" cy="360" r="25" fill="url(#collegeGrad)" filter="url(#shadow)"/>
+
+  <!-- Текст ТазаКаспий -->
+  <text x="250" y="430" font-family="Arial, sans-serif" font-size="38" font-weight="bold" 
+        fill="#006994" text-anchor="middle" letter-spacing="2">ТАЗАКАСПИЙ</text>
+
+  <!-- Подпись -->
+  <text x="250" y="460" font-family="Arial, sans-serif" font-size="16" 
+        fill="#0097A7" text-anchor="middle" letter-spacing="3">ЭКОТРЕКЕР АТЫРАУ</text>
+</svg>
